@@ -41,6 +41,37 @@ class StringManipulator:
                   cleaned = ''.join(char.lower() for char in text if char.isalnum())
                   return cleaned == cleaned[::-1]
 
+    def remove_duplicates(self, text):
+                  """Remove duplicate characters while preserving order."""
+                  self.operations_count += 1
+                  seen = set()
+                  result = []
+                  for char in text:
+                                    if char not in seen:
+                                                          seen.add(char)
+                                                          result.append(char)
+                                                  return ''.join(result)
+
+    def word_frequency(self, text):
+                  """Count frequency of each word in the text."""
+                  self.operations_count += 1
+                  words = text.lower().split()
+                  frequency = {}
+                  for word in words:
+                                    frequency[word] = frequency.get(word, 0) + 1
+                                return frequency
+
+    def get_statistics(self):
+                  """Get comprehensive statistics about operations performed."""
+        return {
+                          'total_operations': self.operations_count,
+                          'available_methods': [
+                                                'reverse_string', 'count_vowels', 'capitalize_words',
+                                                'count_consonants', 'is_palindrome', 'remove_duplicates',
+                                                'word_frequency', 'get_statistics'
+                          ]
+        }
+
 if __name__ == '__main__':
       # Demo functionality
       manipulator = StringManipulator()
@@ -55,4 +86,16 @@ if __name__ == '__main__':
     print(f'Capitalized: {manipulator.capitalize_words(test_string)}')
     print(f'Consonants: {manipulator.count_consonants(test_string)}')
     print(f'Is palindrome: {manipulator.is_palindrome("racecar")}')
-    print(f'Total operations: {manipulator.operations_count}')
+    print(f'Total operations: {manipulator.operations_count}'
+             
+             # Test final methods added in third commit
+             test_text = 'Hello Hello World Programming'
+                 print(f'Remove duplicates: {manipulator.remove_duplicates(test_text)}')
+                     print(f'Word frequency: {manipulator.word_frequency(test_text)}')
+                         
+                             # Display comprehensive statistics
+                                 stats = manipulator.get_statistics()
+                                     print(f'\nFinal Statistics:')
+                                         print(f'Total operations: {stats["total_operations"]}')
+                                             print(f'Available methods: {len(stats["available_methods"])}')
+                                                 print('All methods:', ', '.join(stats["available_methods"])))
