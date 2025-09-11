@@ -7,3 +7,4 @@ num2 = float(input("Enter second number: ")
             addition = num1 + num2
 subtraction = num1 - num2
 multiplication = num1 * num2)
+print(f"Results: {num1} + {num2} = {addition}, {num1} - {num2} = {subtraction}, {num1} * {num2} = {multiplication}")
