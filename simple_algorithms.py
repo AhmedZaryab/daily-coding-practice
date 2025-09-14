@@ -14,4 +14,6 @@ if __name__ == '__main__':
       test_array = [64, 34, 25, 12, 22, 11, 90]
       print('Original array:', test_array)
       sorted_array = bubble_sort(test_array.copy())
-      print('Sorted array:', sorted_array)
+      print('Sorted array:', sorted_array
+           
+           # Second commit: Added more functionalitySecond commit: Add comment for functionality)
