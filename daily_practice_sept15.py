@@ -6,4 +6,4 @@ class TaskManager:
                 self.tasks = []
 
     def add_task(self, task):
-                  self.tasks.append(tas
+                  self.tasks.append(task)
