@@ -1,9 +1,5 @@
+# Daily Coding Practice - Three Commits Demo
+# First commit: Basic calculator function
 
-
-def calculate_sum(a, b):
-          return a + b# Daily Coding Practice - Three Commits Demo
-# First commit: Basic structure
-
-def greet(name):
-      return f"Hello, {name}!"
-kk
+def add_numbers(a, b):
+              return a + b
