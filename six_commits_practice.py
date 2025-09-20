@@ -5,3 +5,5 @@ y = 10
 result = x + y
 print(f'Result: {result}')
 print('Calculation complete!')
+# End of calculation
+print('Program finished')
