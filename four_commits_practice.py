@@ -8,3 +8,5 @@ def add_numbers(a, b):
 
 # Test the function
 result = add_numbers(5, 3)
+print(f"Result: {result}")
+print("Four commits practice complete!")
